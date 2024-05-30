@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="about">
+      <div class="subheading-for-description">
+        Subheading for description or instructions
+      </div>
+      <section class="frame-parent">
+        <header class="rectangle-parent">
+          <div class="frame-child"></div>
+          <div class="wrapper">
+            <b class="b" id="text1">Дорнод аймаг </b>
+          </div>
+          <div class="frame-group">
+            <div class="page-wrapper">
+              <div class="page" id="pageText1">Page</div>
+            </div>
+            <div class="page-container">
+              <div class="page1" id="pageText2">Page</div>
+            </div>
+            <div class="button" id="buttonContainer">
+              <div class="button1">Button</div>
+            </div>
+          </div>
+        </header>
+        <div class="frame-wrapper">
+          <div class="vector-parent">
+            <img class="frame-item" alt="" src="./public/rectangle-2.svg" />
+
+            <div class="page2">Page</div>
+          </div>
+        </div>
+      </section>
+      <section class="about-inner">
+        <div class="frame-container">
+          <div class="parent">
+            <h1 class="h1">Ерөнхий</h1>
+            <div class="paragraph">
+              Дорнод аймаг 1931 онд байгуулагджээ. 1941 оноос 
+              <a
+                class="a"
+                href="https://mn.wikipedia.org/wiki/%D0%A5%D0%BE%D1%80%D0%BB%D0%BE%D0%BE%D0%B3%D0%B8%D0%B9%D0%BD_%D0%A7%D0%BE%D0%B9%D0%B1%D0%B0%D0%BB%D1%81%D0%B0%D0%BD"
+                target="_blank"
+              >
+                <span class="span">Хорлоогийн Чойбалсангийн</span> </a
+              > алдраар "Чойбалсан аймаг" гэж нэрлэгдэж байгаад 1963 оноос эргэн
+              "Дорнод" хэмээн нэрлэгдэх болжээ. Газар нутгийн хэмжээ - 123,597
+              км². Хүн амын тоо - 74,200 (2007 оны эцсийн байдлаар). Засаг
+              захиргааны төв - 
+              <a
+                class="a1"
+                href="https://mn.wikipedia.org/wiki/%D0%A7%D0%BE%D0%B9%D0%B1%D0%B0%D0%BB%D1%81%D0%B0%D0%BD_%D1%85%D0%BE%D1%82"
+                target="_blank"
+              >
+                <span class="span1">Чойбалсан хот</span> </a
+              >. Аймгийн нутаг засаг захиргааны хувьд 14 
+              <a
+                class="a2"
+                href="https://mn.wikipedia.org/wiki/%D0%A1%D1%83%D0%BC"
+                target="_blank"
+              >
+                <span class="span2">суманд</span> </a
+              > хуваагддаг.
+            </div>
+          </div>
+          <img
+            class="hero-image-icon"
+            loading="lazy"
+            alt=""
+            src="./public/hero-image@2x.png"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var text1 = document.getElementById("text1");
+      if (text1) {
+        text1.addEventListener("click", function () {
+          window.open("http://www.dornod.gov.mn/");
+        });
+      }
+      
+      var pageText1 = document.getElementById("pageText1");
+      if (pageText1) {
+        pageText1.addEventListener("click", function (e) {
+          window.location.href = "./about1.html";
+        });
+      }
+      
+      var pageText2 = document.getElementById("pageText2");
+      if (pageText2) {
+        pageText2.addEventListener("click", function (e) {
+          window.location.href = "./onboarding.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function () {
+          window.open(
+            "https://mn.wikipedia.org/wiki/%D0%94%D0%BE%D1%80%D0%BD%D0%BE%D0%B4_%D0%B0%D0%B9%D0%BC%D0%B0%D0%B3"
+          );
+        });
+      }
+      </script>
+  </body>
+</html>
